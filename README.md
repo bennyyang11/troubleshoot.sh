@@ -1,74 +1,145 @@
-# Replicated Troubleshoot
+# Troubleshoot Documentation
 
-Replicated Troubleshoot is a framework for collecting, redacting, and analyzing highly customizable diagnostic information about a Kubernetes cluster. Troubleshoot specs are created by 3rd-party application developers/maintainers and run by cluster operators in the initial and ongoing operation of those applications.
+This repository contains the documentation site for [Troubleshoot](https://troubleshoot.sh), a kubectl plugin providing diagnostic tools for Kubernetes applications.
 
-Troubleshoot provides two CLI tools as kubectl plugins (using [Krew](https://krew.dev)): `kubectl preflight` and `kubectl support-bundle`. Preflight provides pre-installation cluster conformance testing and validation (preflight checks) and support-bundle provides post-installation troubleshooting and diagnostics (support bundles).
+## About Troubleshoot
 
-To know more about troubleshoot, please visit: https://troubleshoot.sh/
+Troubleshoot is a CLI tool that provides pre-installation cluster conformance testing and validation (preflight checks) and post-installation troubleshooting and diagnostics (support bundles).
 
-## Preflight Checks
+### Preflight Checks
 Preflight checks are an easy-to-run set of conformance tests that can be written to verify that specific requirements in a cluster are met.
 
-To run a sample preflight check from a sample application, install the preflight kubectl plugin:
+To run a sample preflight check from a sample application, [install the preflight kubectl plugin](https://troubleshoot.sh/docs/preflight/introduction/) and run:
 
-```
-curl https://krew.sh/preflight | bash
-```
- and run, where https://preflight.replicated.com provides an **example** preflight spec:
-
-```
+```shell
 kubectl preflight https://preflight.replicated.com
 ```
 
-**NOTE** this is an example. Do **not** use to validate real scenarios.
+### Support Bundle
+A support bundle is an archive that's created in-cluster, by collecting logs, cluster information and executing various commands. After creating a support bundle, the cluster operator will normally deliver it to the application vendor for analysis and remote debugging.
 
-For more details on creating the custom resource files that drive preflight checks, visit [creating preflight checks](https://troubleshoot.sh/docs/preflight/introduction/).
+To collect a sample support bundle, [install the troubleshoot kubectl plugin](https://troubleshoot.sh/docs/support-bundle/introduction/) and run:
 
-
-## Support Bundle
-A support bundle is an archive that's created in-cluster, by collecting logs and cluster information, and executing specified commands (including redaction of sensitive information). After creating a support bundle, the cluster operator will normally deliver it to the 3rd-party application vendor for analysis and disconnected debugging. Another Replicated project, [KOTS](https://github.com/replicatedhq/kots), provides k8s apps an in-cluster UI for processing support bundles and viewing analyzers (as well as support bundle collection).
-
-To collect a sample support bundle, install the troubleshoot kubectl plugin:
-
-```
-curl https://krew.sh/support-bundle | bash
-```
- and run, where https://support-bundle.replicated.com provides an **example** support bundle spec:
-
-```
+```shell
 kubectl support-bundle https://support-bundle.replicated.com
 ```
 
-**NOTE** this is an example. Do **not** use to validate real scenarios.
+## Documentation Development
 
-For more details on creating the custom resource files that drive support-bundle collection, visit [creating collectors](https://troubleshoot.sh/docs/collect/) and [creating analyzers](https://troubleshoot.sh/docs/analyze/).
+### Prerequisites
 
-And see our other tool [sbctl](https://github.com/replicatedhq/sbctl) that makes it easier to interact with support bundles using `kubectl` commands you already know
+- Node.js 18.x or higher
+- NPM (comes with Node.js)
 
-# Community
+### Quick Start
 
-For questions about using Troubleshoot, how to contribute and engaging with the project in any other way, please refer to the following resources and channels.
+```bash
+# Install dependencies
+make install
 
-- [Replicated Community](https://help.replicated.com/community) forum
-- [#app-troubleshoot channel in Kubernetes Slack](https://kubernetes.slack.com/channels/app-troubleshoot)
-- [#Community meetings calendar](https://calendar.google.com/calendar/u/0?cid=Y19mMGx1aGhiZGtscGllOGo5dWpicXMwNnN1a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t). This happen monthly but dates may change and would be kept upto date in the calendar.
+# Start development server
+make start
 
-# Software Bill of Materials
-A signed SBOM  that includes Troubleshoot dependencies is included in each release.
-- **troubleshoot-sbom.tgz** contains a software bill of materials for Troubleshoot.
-- **troubleshoot-sbom.tgz.sig** is the digital signature for troubleshoot-sbom.tgz
-- **key.pub** is the public key from the key pair used to sign troubleshoot-sbom.tgz
-
-The following example illustrates using [cosign](https://github.com/sigstore/cosign) to verify that **troubleshoot-sbom.tgz** has
-not been tampered with.
-```sh
-$ cosign verify-blob --key key.pub --signature troubleshoot-sbom.tgz.sig troubleshoot-sbom.tgz
-Verified OK
+# The site will be available at http://localhost:3001
 ```
 
-If you were to get an error similar to the one below, it means you are verifying an SBOM signed using cosign `v1` using a newer `v2` of the binary. This version introduced [breaking changes](https://github.com/sigstore/cosign/blob/main/CHANGELOG.md#breaking-changes) which require an additional flag `--insecure-ignore-tlog=true` to successfully verify SBOMs like so.
-```sh
-$ cosign verify-blob --key key.pub --signature troubleshoot-sbom.tgz.sig troubleshoot-sbom.tgz --insecure-ignore-tlog=true
-WARNING: Skipping tlog verification is an insecure practice that lacks of transparency and auditability verification for the blob.
-Verified OK
+### Available Commands
+
+```bash
+make install               # Install dependencies
+make start                 # Start development server
+make build                 # Build for production
+make serve                 # Serve built site locally
+make test                  # Run all tests
+make clean                 # Clear cache
+make help                  # Show available commands
 ```
+
+## Deployment
+
+The site is automatically deployed to Netlify when changes are pushed to the main branch.
+
+- **Build Command**: `make build`
+- **Publish Directory**: `build`
+- **Node Version**: 18
+
+The deployment configuration is in `netlify.toml` and includes:
+- URL redirects for legacy paths
+- Caching headers for static assets
+- Security headers
+- SPA fallback routing
+
+## Site Structure
+
+This is a [Docusaurus](https://docusaurus.io/) site with the following structure:
+
+```
+├── docs/                   # Documentation content
+│   ├── preflight/          # Preflight checks
+│   ├── support-bundle/     # Support bundle
+│   ├── collect/            # Collectors
+│   ├── analyze/            # Analyzers
+│   ├── redact/             # Redactors
+│   └── host-collect-analyze/  # Host utilities
+├── src/                    # React components and pages
+│   ├── components/         # Reusable components
+│   ├── css/               # Custom styling
+│   └── pages/             # Custom pages
+├── static/                # Static assets
+├── tests/                 # Test scripts
+└── .github/workflows/     # GitHub Actions
+```
+
+## Key Features
+
+- **Custom Landing Page**: Matches the original troubleshoot.sh design
+- **Responsive Design**: Mobile-friendly with proper breakpoints
+- **Enhanced Code Blocks**: Syntax highlighting with copy buttons
+- **Search Integration**: Algolia DocSearch with automated indexing
+- **SEO Optimized**: Proper meta tags and social cards
+- **Performance**: Optimized builds with caching
+
+## Search Setup
+
+The site uses Algolia DocSearch for search functionality. The search is configured to:
+
+- **Index automatically**: GitHub Actions workflow runs hourly to keep search updated
+- **Use environment variables**: `ALGOLIA_APP_ID` and `ALGOLIA_API_KEY` for credentials
+- **Support contextual search**: Results are filtered by section and page context
+
+### Environment Variables
+
+For local development with search:
+```bash
+export ALGOLIA_APP_ID="your_app_id"
+export ALGOLIA_API_KEY="your_api_key"
+```
+
+For production deployment:
+- **Netlify**: Set in Site settings > Environment variables
+- **GitHub Actions**: Set in Repository secrets
+
+## Testing
+
+Run all tests with:
+```bash
+./tests/run-all-tests.sh
+```
+
+Individual tests:
+```bash
+./tests/build-test.sh      # Validates build process and output
+./tests/test-search.sh     # Validates search configuration
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run `make test` to ensure everything works
+5. Submit a pull request
+
+## Support
+
+For issues with the documentation site, please file an issue in the [Troubleshoot repository](https://github.com/replicatedhq/troubleshoot/issues).
