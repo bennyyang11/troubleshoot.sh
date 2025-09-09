@@ -1,8 +1,0 @@
-{
-  "kind": "JobList",
-  "apiVersion": "batch/v1",
-  "metadata": {
-    "resourceVersion": "1148"
-  },
-  "items": null
-}

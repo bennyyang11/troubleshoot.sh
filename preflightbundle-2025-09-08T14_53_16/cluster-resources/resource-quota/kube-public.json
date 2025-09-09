@@ -1,8 +1,0 @@
-{
-  "kind": "ResourceQuotaList",
-  "apiVersion": "v1",
-  "metadata": {
-    "resourceVersion": "1150"
-  },
-  "items": null
-}
