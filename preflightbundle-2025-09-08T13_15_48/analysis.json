@@ -1,0 +1,188 @@
+[
+    {
+        "name": "required.kubernetes.version",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_cluster_version",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/kubernetes.svg?w=16\u0026h=16"
+        },
+        "insight": {
+            "name": "required.kubernetes.version",
+            "labels": {
+                "iconKey": "kubernetes_cluster_version",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/kubernetes.svg?w=16\u0026h=16"
+            },
+            "primary": "Required Kubernetes Version",
+            "detail": "Your cluster meets the recommended and required versions of Kubernetes.",
+            "severity": "debug"
+        },
+        "severity": "debug",
+        "analyzerSpec": ""
+    },
+    {
+        "name": "ingress",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_custom_resource_definition",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/custom-resource-definition.svg?w=13\u0026h=16"
+        },
+        "insight": {
+            "name": "ingress",
+            "labels": {
+                "iconKey": "kubernetes_custom_resource_definition",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/custom-resource-definition.svg?w=13\u0026h=16"
+            },
+            "primary": "Ingress",
+            "detail": "Contour ingress not found!",
+            "severity": "error"
+        },
+        "severity": "error",
+        "analyzerSpec": "",
+        "error": "Contour ingress not found!"
+    },
+    {
+        "name": "container.runtime",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_container_runtime",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/container-runtime.svg?w=23\u0026h=16"
+        },
+        "insight": {
+            "name": "container.runtime",
+            "labels": {
+                "iconKey": "kubernetes_container_runtime",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/container-runtime.svg?w=23\u0026h=16"
+            },
+            "primary": "Container Runtime",
+            "detail": "Did not find containerd container runtime.",
+            "severity": "error"
+        },
+        "severity": "error",
+        "analyzerSpec": "",
+        "error": "Did not find containerd container runtime."
+    },
+    {
+        "name": "required.storage.classes",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_storage_class",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/storage-class.svg?w=12\u0026h=12"
+        },
+        "insight": {
+            "name": "required.storage.classes",
+            "labels": {
+                "iconKey": "kubernetes_storage_class",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/storage-class.svg?w=12\u0026h=12"
+            },
+            "primary": "Required storage classes",
+            "detail": "Could not find a storage class called default.",
+            "severity": "error"
+        },
+        "severity": "error",
+        "analyzerSpec": "",
+        "error": "Could not find a storage class called default."
+    },
+    {
+        "name": "kubernetes.distribution",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_distribution",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/distribution.svg?w=20\u0026h=14"
+        },
+        "insight": {
+            "name": "kubernetes.distribution",
+            "labels": {
+                "iconKey": "kubernetes_distribution",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/distribution.svg?w=20\u0026h=14"
+            },
+            "primary": "Kubernetes Distribution",
+            "detail": "The application does not support Minikube Clusters",
+            "severity": "error"
+        },
+        "severity": "error",
+        "analyzerSpec": "",
+        "error": "The application does not support Minikube Clusters"
+    },
+    {
+        "name": "must.have.at.least.3.nodes.in.the.cluster.with.5.recommended",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_node_resources",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/node-resources.svg?w=16\u0026h=18"
+        },
+        "insight": {
+            "name": "must.have.at.least.3.nodes.in.the.cluster.with.5.recommended",
+            "labels": {
+                "iconKey": "kubernetes_node_resources",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/node-resources.svg?w=16\u0026h=18"
+            },
+            "primary": "Must have at least 3 nodes in the cluster, with 5 recommended",
+            "detail": "This application requires at least 3 nodes.",
+            "severity": "error"
+        },
+        "severity": "error",
+        "analyzerSpec": "",
+        "error": "This application requires at least 3 nodes."
+    },
+    {
+        "name": "every.node.in.the.cluster.must.have.at.least.8.gb.of.memory.with.32.gb.recommended",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_node_resources",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/node-resources.svg?w=16\u0026h=18"
+        },
+        "insight": {
+            "name": "every.node.in.the.cluster.must.have.at.least.8.gb.of.memory.with.32.gb.recommended",
+            "labels": {
+                "iconKey": "kubernetes_node_resources",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/node-resources.svg?w=16\u0026h=18"
+            },
+            "primary": "Every node in the cluster must have at least 8 GB of memory, with 32 GB recommended",
+            "detail": "All nodes must have at least 8 GB of memory.",
+            "severity": "error"
+        },
+        "severity": "error",
+        "analyzerSpec": "",
+        "error": "All nodes must have at least 8 GB of memory."
+    },
+    {
+        "name": "total.cpu.cores.in.the.cluster.is.4.or.greater",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_node_resources",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/node-resources.svg?w=16\u0026h=18"
+        },
+        "insight": {
+            "name": "total.cpu.cores.in.the.cluster.is.4.or.greater",
+            "labels": {
+                "iconKey": "kubernetes_node_resources",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/node-resources.svg?w=16\u0026h=18"
+            },
+            "primary": "Total CPU Cores in the cluster is 4 or greater",
+            "detail": "There are at least 4 cores in the cluster",
+            "severity": "debug"
+        },
+        "severity": "debug",
+        "analyzerSpec": ""
+    },
+    {
+        "name": "every.node.in.the.cluster.must.have.at.least.40.gb.of.ephemeral.storage.with.100.gb.recommended",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_node_resources",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/node-resources.svg?w=16\u0026h=18"
+        },
+        "insight": {
+            "name": "every.node.in.the.cluster.must.have.at.least.40.gb.of.ephemeral.storage.with.100.gb.recommended",
+            "labels": {
+                "iconKey": "kubernetes_node_resources",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/node-resources.svg?w=16\u0026h=18"
+            },
+            "primary": "Every node in the cluster must have at least 40 GB of ephemeral storage, with 100 GB recommended",
+            "detail": "All nodes have at least 100 GB of ephemeral storage.",
+            "severity": "debug"
+        },
+        "severity": "debug",
+        "analyzerSpec": ""
+    }
+]

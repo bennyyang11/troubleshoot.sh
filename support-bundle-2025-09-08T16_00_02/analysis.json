@@ -1,0 +1,22 @@
+[
+    {
+        "name": "required.kubernetes.version",
+        "labels": {
+            "desiredPosition": "1",
+            "iconKey": "kubernetes_cluster_version",
+            "iconUri": "https://troubleshoot.sh/images/analyzer-icons/kubernetes.svg?w=16\u0026h=16"
+        },
+        "insight": {
+            "name": "required.kubernetes.version",
+            "labels": {
+                "iconKey": "kubernetes_cluster_version",
+                "iconUri": "https://troubleshoot.sh/images/analyzer-icons/kubernetes.svg?w=16\u0026h=16"
+            },
+            "primary": "Required Kubernetes Version",
+            "detail": "Kubernetes version is OK",
+            "severity": "debug"
+        },
+        "severity": "debug",
+        "analyzerSpec": ""
+    }
+]

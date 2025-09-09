@@ -1,0 +1,704 @@
+{
+  "kind": "ServiceAccountList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "2547"
+  },
+  "items": [
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "attachdetach-controller",
+        "namespace": "kube-system",
+        "uid": "f9301e56-f1e0-448e-83c6-a441ca1705e7",
+        "resourceVersion": "394",
+        "creationTimestamp": "2025-09-08T19:46:00Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "certificate-controller",
+        "namespace": "kube-system",
+        "uid": "7065a287-20d1-4d2f-b321-51cb864d3fa0",
+        "resourceVersion": "258",
+        "creationTimestamp": "2025-09-08T19:45:58Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "clusterrole-aggregation-controller",
+        "namespace": "kube-system",
+        "uid": "a9ec8bc5-969b-4f33-acba-54f27364af24",
+        "resourceVersion": "233",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "coredns",
+        "namespace": "kube-system",
+        "uid": "6bf8330b-ad45-42e6-ae05-cadf1e30bc73",
+        "resourceVersion": "271",
+        "creationTimestamp": "2025-09-08T19:45:58Z",
+        "labels": {
+          "objectset.rio.cattle.io/hash": "bce283298811743a0386ab510f2f67ef74240c57"
+        },
+        "annotations": {
+          "objectset.rio.cattle.io/applied": "H4sIAAAAAAAA/4yPzU7rQAxGX+XqW6e5+WsTRmLRNUsk9s6MQ4ckdpVxg1DVd0fZIaECS+vYR8dX0Dm+8JKiChzWEhnGKAEOz7ys0fPRe72IIcPMRoGM4K4gETWyqJK2Ufs39pbY8iVq7sls4jzq/7iJkN3l+i687F7XEQ5jnb6Qtcz+PUUJj8cQVH5VCM0MB68LB0l/Wk9n8tvNeOl5lz6S8Yxbhol6nn586kTpBIfec9XV1UPXlWXb1FTU3YH6fVkM1XBoeWibqin8vt2k3/LuBtw+AwAA///oKnY0kgEAAA",
+          "objectset.rio.cattle.io/id": "",
+          "objectset.rio.cattle.io/owner-gvk": "k3s.cattle.io/v1, Kind=Addon",
+          "objectset.rio.cattle.io/owner-name": "coredns",
+          "objectset.rio.cattle.io/owner-namespace": "kube-system"
+        },
+        "managedFields": [
+          {
+            "manager": "deploy@34b315c61",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:58Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/applied": {},
+                  "f:objectset.rio.cattle.io/id": {},
+                  "f:objectset.rio.cattle.io/owner-gvk": {},
+                  "f:objectset.rio.cattle.io/owner-name": {},
+                  "f:objectset.rio.cattle.io/owner-namespace": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/hash": {}
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "cronjob-controller",
+        "namespace": "kube-system",
+        "uid": "9830b46d-5bb4-41c2-bd02-26bc70a1a16b",
+        "resourceVersion": "336",
+        "creationTimestamp": "2025-09-08T19:45:59Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "daemon-set-controller",
+        "namespace": "kube-system",
+        "uid": "0ef8bcf1-adac-4424-b5e7-87fb440f7534",
+        "resourceVersion": "237",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "default",
+        "namespace": "kube-system",
+        "uid": "621fe59b-eb9e-494f-94a2-e60e6d64b3ef",
+        "resourceVersion": "429",
+        "creationTimestamp": "2025-09-08T19:46:01Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "deployment-controller",
+        "namespace": "kube-system",
+        "uid": "c661fb32-95c3-454f-a226-a539020c1023",
+        "resourceVersion": "259",
+        "creationTimestamp": "2025-09-08T19:45:58Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "disruption-controller",
+        "namespace": "kube-system",
+        "uid": "9c585ad7-cef7-4864-88af-6ce0f56b1ba9",
+        "resourceVersion": "392",
+        "creationTimestamp": "2025-09-08T19:46:00Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "endpoint-controller",
+        "namespace": "kube-system",
+        "uid": "ddfeee29-fb89-49dd-9fb5-e1418d39fd58",
+        "resourceVersion": "254",
+        "creationTimestamp": "2025-09-08T19:45:58Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "endpointslice-controller",
+        "namespace": "kube-system",
+        "uid": "84ffb764-ad35-4699-9b8a-ecaee62c2f44",
+        "resourceVersion": "255",
+        "creationTimestamp": "2025-09-08T19:45:58Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "endpointslicemirroring-controller",
+        "namespace": "kube-system",
+        "uid": "7c08329d-fe47-4731-bab3-1121f140a1c1",
+        "resourceVersion": "384",
+        "creationTimestamp": "2025-09-08T19:45:59Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "ephemeral-volume-controller",
+        "namespace": "kube-system",
+        "uid": "e5996d72-f5de-465d-9f69-2af8b8a679ff",
+        "resourceVersion": "252",
+        "creationTimestamp": "2025-09-08T19:45:57Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "expand-controller",
+        "namespace": "kube-system",
+        "uid": "c0f416b1-d5d1-4ac3-a89b-5e02c4da85ed",
+        "resourceVersion": "232",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "generic-garbage-collector",
+        "namespace": "kube-system",
+        "uid": "df211782-8c7d-4417-a893-8cd169352652",
+        "resourceVersion": "249",
+        "creationTimestamp": "2025-09-08T19:45:57Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "helm-traefik",
+        "namespace": "kube-system",
+        "uid": "fb97fd58-4ef9-4db0-9306-fbd63c03c8dd",
+        "resourceVersion": "375",
+        "creationTimestamp": "2025-09-08T19:45:59Z",
+        "labels": {
+          "objectset.rio.cattle.io/hash": "c0f97ea7a25e3dec71957c7a3241a38f3e5fae5f"
+        },
+        "annotations": {
+          "objectset.rio.cattle.io/applied": "H4sIAAAAAAAA/4yST4sUMRDFv4rUORmnp7fpmYAH0YPgQdDFi3iozrzsxM6fIakekaW/u3QzuKvLqsdKqn71eK/uic/+M0r1OZGhS0OKeJIc85TkE8rFW7y2dqlu84hERsoERaNPRzL0ewcpihA+sjCZe+KUsrD4nOpS5uEbrFTIpvi8sSwSsPH5pV9AJ4SobU5Scggo2p64iC6481XKyiD1LCF/Tyj67jJeQY++Lo168d6n46t3CPHNAv0nJ3EEGZLCcH78r/Z6ZrvMjNMAXX9UQaRZkS1Ypd/6iCocz2TSFIKiwAPCX005cT2RIbt1hx7c865De4Ttm0PX257b3U3D7d616Byjc8u2q+7VyQfxz8lTtMr/CIeCZFHJfPnjGJ5YSYqGkO34YZl8i4A1F+M4VCh6SO/X0/VKHnv/xN1pzb/tOtt2zaDdvt/qG+wPmrnp9aHp9sBg3XY30Px1nn8GAAD//zDKFpyxAgAA",
+          "objectset.rio.cattle.io/id": "helm-controller-chart-registration",
+          "objectset.rio.cattle.io/owner-gvk": "helm.cattle.io/v1, Kind=HelmChart",
+          "objectset.rio.cattle.io/owner-name": "traefik",
+          "objectset.rio.cattle.io/owner-namespace": "kube-system"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "helm.cattle.io/v1",
+            "kind": "HelmChart",
+            "name": "traefik",
+            "uid": "355c351b-f870-4e89-aa17-9158eebcf02b",
+            "controller": false,
+            "blockOwnerDeletion": false
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "helm-controller@34b315c61",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:59Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:automountServiceAccountToken": {},
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/applied": {},
+                  "f:objectset.rio.cattle.io/id": {},
+                  "f:objectset.rio.cattle.io/owner-gvk": {},
+                  "f:objectset.rio.cattle.io/owner-name": {},
+                  "f:objectset.rio.cattle.io/owner-namespace": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/hash": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"355c351b-f870-4e89-aa17-9158eebcf02b\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "automountServiceAccountToken": true
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "helm-traefik-crd",
+        "namespace": "kube-system",
+        "uid": "34eae141-6f1a-4387-8702-9445d490d27a",
+        "resourceVersion": "374",
+        "creationTimestamp": "2025-09-08T19:45:59Z",
+        "labels": {
+          "objectset.rio.cattle.io/hash": "48ff3d5c3117b372fcdca509795f9f2702af0592"
+        },
+        "annotations": {
+          "objectset.rio.cattle.io/applied": "H4sIAAAAAAAA/4yST4/UMAzFvwryORn6Z2dKI3FAcEDigAQrLoiD6zg7oWkyStxBaNXvjlqNYBcY2KOT+Bf7vXcPePKfOBefIhg416AAZ0lTmqN85Hz2xK+I1uo2jRzBSJ5ZweijBQOPX4CCiQUtCoK5B4wxCYpPsaxlGr4ySWHZZZ92hCKBdz499yvoyGHSlKLkFAJnTUfMojPf+SJ5Y4C6SkjfImd9dx4voAdX51o9e+ejffmWw/R6hf6XE3FiMCAZ2flRU7ZPaiknpLVvnAfW5XsRnmBRQJm38W/9xEVwOoGJcwgKAg4c/inMEcsRDNy8cK61e2rruhvarnFkCfdV3/V717umqxp01b5v1t8us29qPl7g2ogKthU+sOPMkbiA+fxbKP6QFBQMIdH4fu18w4E3f4zDUFjBLxd/Hl3S8tCDv6o8b1nobN8PQ29161ylb+gw6P7QsbZtjUxcHbg5wPJlWX4EAAD//5DIy4C9AgAA",
+          "objectset.rio.cattle.io/id": "helm-controller-chart-registration",
+          "objectset.rio.cattle.io/owner-gvk": "helm.cattle.io/v1, Kind=HelmChart",
+          "objectset.rio.cattle.io/owner-name": "traefik-crd",
+          "objectset.rio.cattle.io/owner-namespace": "kube-system"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "helm.cattle.io/v1",
+            "kind": "HelmChart",
+            "name": "traefik-crd",
+            "uid": "7d99bb9d-3ff0-4c6b-967e-d31aece06e26",
+            "controller": false,
+            "blockOwnerDeletion": false
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "helm-controller@34b315c61",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:59Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:automountServiceAccountToken": {},
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/applied": {},
+                  "f:objectset.rio.cattle.io/id": {},
+                  "f:objectset.rio.cattle.io/owner-gvk": {},
+                  "f:objectset.rio.cattle.io/owner-name": {},
+                  "f:objectset.rio.cattle.io/owner-namespace": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/hash": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"7d99bb9d-3ff0-4c6b-967e-d31aece06e26\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "automountServiceAccountToken": true
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "horizontal-pod-autoscaler",
+        "namespace": "kube-system",
+        "uid": "4415d8a3-8a96-4024-8367-700c09be015c",
+        "resourceVersion": "270",
+        "creationTimestamp": "2025-09-08T19:45:58Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "job-controller",
+        "namespace": "kube-system",
+        "uid": "ea74401f-4087-44f5-ae2f-e66dbafa0eda",
+        "resourceVersion": "251",
+        "creationTimestamp": "2025-09-08T19:45:57Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "legacy-service-account-token-cleaner",
+        "namespace": "kube-system",
+        "uid": "4e02095a-11c7-4a63-b780-5def96987fc9",
+        "resourceVersion": "234",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "local-path-provisioner-service-account",
+        "namespace": "kube-system",
+        "uid": "deb5b530-5330-4366-ae3e-9b43c3b13b89",
+        "resourceVersion": "283",
+        "creationTimestamp": "2025-09-08T19:45:59Z",
+        "labels": {
+          "objectset.rio.cattle.io/hash": "183f35c65ffbc3064603f43f1580d8c68a2dabd4"
+        },
+        "annotations": {
+          "objectset.rio.cattle.io/applied": "H4sIAAAAAAAA/4yQQUvEMBCF/4rMuVlb05YS8LBnj4L3aTLdxraZkpmtyLL/XYogelj1ODzex5vvArjGF8oSOYGDrYICppgCOHimvEVPR+/5nBQKWEgxoCK4C2BKrKiRk+wn96/kVUgPOfLBo+pMh8j3cQdBcTPnt0TZnLYJHExWviVbVdw9xRQejyFw+hORcCFwMLPH2YhyxhP9qyQr+r05nXsy8i5KC1wLmLGn+dfXRpQRHFSdHWzj22YYem/Ltm5LO9R2qJquDJ1vO3wI2Id6h/4YuaKOZs28xd09ZSOfvg1+Cb+57/oRAAD///h+7Ma3AQAA",
+          "objectset.rio.cattle.io/id": "",
+          "objectset.rio.cattle.io/owner-gvk": "k3s.cattle.io/v1, Kind=Addon",
+          "objectset.rio.cattle.io/owner-name": "local-storage",
+          "objectset.rio.cattle.io/owner-namespace": "kube-system"
+        },
+        "managedFields": [
+          {
+            "manager": "deploy@34b315c61",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:59Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/applied": {},
+                  "f:objectset.rio.cattle.io/id": {},
+                  "f:objectset.rio.cattle.io/owner-gvk": {},
+                  "f:objectset.rio.cattle.io/owner-name": {},
+                  "f:objectset.rio.cattle.io/owner-namespace": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/hash": {}
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "metrics-server",
+        "namespace": "kube-system",
+        "uid": "46d6e31d-531f-4504-9251-d18f56696dd0",
+        "resourceVersion": "317",
+        "creationTimestamp": "2025-09-08T19:45:59Z",
+        "labels": {
+          "objectset.rio.cattle.io/hash": "e10e245e13e46a725c9dddd4f9eb239f147774fd"
+        },
+        "annotations": {
+          "objectset.rio.cattle.io/applied": "H4sIAAAAAAAA/4TPPU/DMBDG8a+Cbk4CeSlRLDF0ZkRiv/ieUJPEjuxrUFX1u6PAwlDa0X6kn/53Jl7cO2JywZOhtaSMRueFDL0hrs5ib204eqWMZigLK5M5E3sflNUFn7Zn6D9hNUGL6EJhWXVC4cKj2yDK/t3Dl0fMP9aRDI11+rOsZfbw6ry87EWCv0t4nkFmS4zOpjwhroi5YJnCacZP/n0gLWw3ZTz2yNMpKWa6ZDRxj+nmmQdOBzKE8glVs0NZo3nmttrZTkSkGTr0Vd0NZdO2bTPIhl4Npt//qx2X7wAAAP//ruNhwKsBAAA",
+          "objectset.rio.cattle.io/id": "",
+          "objectset.rio.cattle.io/owner-gvk": "k3s.cattle.io/v1, Kind=Addon",
+          "objectset.rio.cattle.io/owner-name": "metrics-server-deployment",
+          "objectset.rio.cattle.io/owner-namespace": "kube-system"
+        },
+        "managedFields": [
+          {
+            "manager": "deploy@34b315c61",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:59Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/applied": {},
+                  "f:objectset.rio.cattle.io/id": {},
+                  "f:objectset.rio.cattle.io/owner-gvk": {},
+                  "f:objectset.rio.cattle.io/owner-name": {},
+                  "f:objectset.rio.cattle.io/owner-namespace": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:objectset.rio.cattle.io/hash": {}
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "namespace-controller",
+        "namespace": "kube-system",
+        "uid": "e551f173-1354-4ef1-bebd-5c005c63bef1",
+        "resourceVersion": "236",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "node-controller",
+        "namespace": "kube-system",
+        "uid": "65dbd4e8-a894-4c77-9a6e-3e9da49ddf24",
+        "resourceVersion": "238",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "persistent-volume-binder",
+        "namespace": "kube-system",
+        "uid": "a73d57cb-d5a0-4f41-b40a-e8fea5e09ae3",
+        "resourceVersion": "393",
+        "creationTimestamp": "2025-09-08T19:46:00Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "pod-garbage-collector",
+        "namespace": "kube-system",
+        "uid": "b923d8ed-dcf8-43c1-862d-02faf0bfae97",
+        "resourceVersion": "248",
+        "creationTimestamp": "2025-09-08T19:45:57Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "pv-protection-controller",
+        "namespace": "kube-system",
+        "uid": "d3600f8e-0a96-4be4-b54d-ad21e1cc2d83",
+        "resourceVersion": "293",
+        "creationTimestamp": "2025-09-08T19:45:59Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "pvc-protection-controller",
+        "namespace": "kube-system",
+        "uid": "cadb4ce8-f47c-4df7-a102-7d0c3b3db6be",
+        "resourceVersion": "395",
+        "creationTimestamp": "2025-09-08T19:46:00Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "replicaset-controller",
+        "namespace": "kube-system",
+        "uid": "53737bcb-07f0-49a6-b89f-e877c1b1d2d1",
+        "resourceVersion": "257",
+        "creationTimestamp": "2025-09-08T19:45:58Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "replication-controller",
+        "namespace": "kube-system",
+        "uid": "a4e1425c-b6f5-43e7-afa8-48f70962608b",
+        "resourceVersion": "256",
+        "creationTimestamp": "2025-09-08T19:45:58Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "resourcequota-controller",
+        "namespace": "kube-system",
+        "uid": "f010bb8b-a783-4656-96b3-7671ce9a99d5",
+        "resourceVersion": "235",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "root-ca-cert-publisher",
+        "namespace": "kube-system",
+        "uid": "8a65acd7-d0bd-4d22-a10d-21760bc62633",
+        "resourceVersion": "397",
+        "creationTimestamp": "2025-09-08T19:46:00Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "service-account-controller",
+        "namespace": "kube-system",
+        "uid": "2408d3ec-b92c-416b-b630-e56284b3fc3a",
+        "resourceVersion": "391",
+        "creationTimestamp": "2025-09-08T19:45:59Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "service-cidrs-controller",
+        "namespace": "kube-system",
+        "uid": "04cc3a7b-fd6c-4e9f-ab4a-53960213d535",
+        "resourceVersion": "243",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "statefulset-controller",
+        "namespace": "kube-system",
+        "uid": "a0f4b893-b8f6-4f9f-bacc-0e30b9fbb078",
+        "resourceVersion": "398",
+        "creationTimestamp": "2025-09-08T19:46:00Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "svclb",
+        "namespace": "kube-system",
+        "uid": "1b5081c1-f100-49f6-8531-6c116cbeef13",
+        "resourceVersion": "396",
+        "creationTimestamp": "2025-09-08T19:46:00Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "token-cleaner",
+        "namespace": "kube-system",
+        "uid": "ad4efbce-5667-4c7d-a8bf-69d5c5adc8d5",
+        "resourceVersion": "231",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "traefik",
+        "namespace": "kube-system",
+        "uid": "dd76b902-49eb-44d6-ab88-d2004790a635",
+        "resourceVersion": "847",
+        "creationTimestamp": "2025-09-08T19:46:38Z",
+        "labels": {
+          "app.kubernetes.io/instance": "traefik-kube-system",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "traefik",
+          "helm.sh/chart": "traefik-34.2.1_up34.2.0"
+        },
+        "annotations": {
+          "meta.helm.sh/release-name": "traefik",
+          "meta.helm.sh/release-namespace": "kube-system"
+        },
+        "managedFields": [
+          {
+            "manager": "helm",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:38Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:automountServiceAccountToken": {},
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:meta.helm.sh/release-name": {},
+                  "f:meta.helm.sh/release-namespace": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:app.kubernetes.io/instance": {},
+                  "f:app.kubernetes.io/managed-by": {},
+                  "f:app.kubernetes.io/name": {},
+                  "f:helm.sh/chart": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "automountServiceAccountToken": false
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "ttl-after-finished-controller",
+        "namespace": "kube-system",
+        "uid": "2488268d-154e-403e-ac08-10151f42d1ec",
+        "resourceVersion": "242",
+        "creationTimestamp": "2025-09-08T19:45:56Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "ttl-controller",
+        "namespace": "kube-system",
+        "uid": "7c9d0c31-4752-4caa-96d5-a2a45eeb3ab3",
+        "resourceVersion": "346",
+        "creationTimestamp": "2025-09-08T19:45:59Z"
+      }
+    },
+    {
+      "kind": "ServiceAccount",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "validatingadmissionpolicy-status-controller",
+        "namespace": "kube-system",
+        "uid": "634a8b33-f4df-484e-9b49-3a857fc1bd23",
+        "resourceVersion": "253",
+        "creationTimestamp": "2025-09-08T19:45:57Z"
+      }
+    }
+  ]
+}

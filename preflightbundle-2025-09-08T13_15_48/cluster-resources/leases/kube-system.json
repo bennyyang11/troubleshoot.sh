@@ -1,0 +1,52 @@
+{
+  "kind": "LeaseList",
+  "apiVersion": "coordination.k8s.io/v1",
+  "metadata": {
+    "resourceVersion": "463"
+  },
+  "items": [
+    {
+      "kind": "Lease",
+      "apiVersion": "coordination.k8s.io/v1",
+      "metadata": {
+        "name": "apiserver-eqt674mfxb4j56mrjjkoe7b7ii",
+        "namespace": "kube-system",
+        "uid": "33bf4100-0ea6-40ae-b08d-69d57a93bca1",
+        "resourceVersion": "462",
+        "creationTimestamp": "2025-09-08T18:14:05Z",
+        "labels": {
+          "apiserver.kubernetes.io/identity": "kube-apiserver",
+          "kubernetes.io/hostname": "minikube"
+        },
+        "managedFields": [
+          {
+            "manager": "kube-apiserver",
+            "operation": "Update",
+            "apiVersion": "coordination.k8s.io/v1",
+            "time": "2025-09-08T18:15:47Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:apiserver.kubernetes.io/identity": {},
+                  "f:kubernetes.io/hostname": {}
+                }
+              },
+              "f:spec": {
+                "f:holderIdentity": {},
+                "f:leaseDurationSeconds": {},
+                "f:renewTime": {}
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "holderIdentity": "apiserver-eqt674mfxb4j56mrjjkoe7b7ii_72318070-f644-4b09-a96b-725089246090",
+        "leaseDurationSeconds": 3600,
+        "renewTime": "2025-09-08T18:15:47.567159Z"
+      }
+    }
+  ]
+}

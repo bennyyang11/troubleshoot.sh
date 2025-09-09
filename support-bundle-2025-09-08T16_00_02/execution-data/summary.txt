@@ -1,0 +1,16 @@
+============ Collectors summary =============
+Succeeded (S), eXcluded (X), Failed (F)
+=============================================
+cluster-resources (S) : 31,692ms
+cluster-info (S)      : 184ms
+data (S)              : 0ms
+
+============ Redactors summary =============
+In-cluster collectors : 386ms
+
+============= Analyzers summary =============
+Succeeded (S), eXcluded (X), Failed (F)
+=============================================
+Required Kubernetes Version (S) : 0ms
+
+Duration: 33,529ms

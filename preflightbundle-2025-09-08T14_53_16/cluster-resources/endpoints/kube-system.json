@@ -1,0 +1,232 @@
+{
+  "kind": "EndpointsList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "1156"
+  },
+  "items": [
+    {
+      "kind": "Endpoints",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "kube-dns",
+        "namespace": "kube-system",
+        "uid": "03540ca4-f134-4a16-9592-ced13ae206ab",
+        "resourceVersion": "674",
+        "creationTimestamp": "2025-09-08T19:46:01Z",
+        "labels": {
+          "endpoints.kubernetes.io/managed-by": "endpoint-controller",
+          "k8s-app": "kube-dns",
+          "kubernetes.io/cluster-service": "true",
+          "kubernetes.io/name": "CoreDNS",
+          "objectset.rio.cattle.io/hash": "bce283298811743a0386ab510f2f67ef74240c57"
+        },
+        "annotations": {
+          "endpoints.kubernetes.io/last-change-trigger-time": "2025-09-08T19:46:24Z"
+        },
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:24Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:endpoints.kubernetes.io/managed-by": {},
+                  "f:k8s-app": {},
+                  "f:kubernetes.io/cluster-service": {},
+                  "f:kubernetes.io/name": {},
+                  "f:objectset.rio.cattle.io/hash": {}
+                }
+              },
+              "f:subsets": {}
+            }
+          }
+        ]
+      },
+      "subsets": [
+        {
+          "addresses": [
+            {
+              "ip": "10.42.0.7",
+              "nodeName": "34b315c61",
+              "targetRef": {
+                "kind": "Pod",
+                "namespace": "kube-system",
+                "name": "coredns-64fd4b4794-qmkqk",
+                "uid": "298b0b75-fb90-45a4-843f-8600509874d4"
+              }
+            }
+          ],
+          "ports": [
+            {
+              "name": "dns-tcp",
+              "port": 53,
+              "protocol": "TCP"
+            },
+            {
+              "name": "dns",
+              "port": 53,
+              "protocol": "UDP"
+            },
+            {
+              "name": "metrics",
+              "port": 9153,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "Endpoints",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "metrics-server",
+        "namespace": "kube-system",
+        "uid": "cd02f5f0-ed2e-4167-93c0-4279decd5484",
+        "resourceVersion": "899",
+        "creationTimestamp": "2025-09-08T19:46:01Z",
+        "labels": {
+          "endpoints.kubernetes.io/managed-by": "endpoint-controller",
+          "kubernetes.io/cluster-service": "true",
+          "kubernetes.io/name": "Metrics-server",
+          "objectset.rio.cattle.io/hash": "a5d3bc601c871e123fa32b27f549b6ea770bcf4a"
+        },
+        "annotations": {
+          "endpoints.kubernetes.io/last-change-trigger-time": "2025-09-08T19:46:40Z"
+        },
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:endpoints.kubernetes.io/managed-by": {},
+                  "f:kubernetes.io/cluster-service": {},
+                  "f:kubernetes.io/name": {},
+                  "f:objectset.rio.cattle.io/hash": {}
+                }
+              },
+              "f:subsets": {}
+            }
+          }
+        ]
+      },
+      "subsets": [
+        {
+          "addresses": [
+            {
+              "ip": "10.42.0.8",
+              "nodeName": "34b315c61",
+              "targetRef": {
+                "kind": "Pod",
+                "namespace": "kube-system",
+                "name": "metrics-server-7bfffcd44-rj4tw",
+                "uid": "2fbf6387-e075-4e7a-b38f-90f0d3912b0e"
+              }
+            }
+          ],
+          "ports": [
+            {
+              "name": "https",
+              "port": 10250,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "Endpoints",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "traefik",
+        "namespace": "kube-system",
+        "uid": "fb1171e8-ff2b-42cd-a7f5-6c618e4e7db5",
+        "resourceVersion": "930",
+        "creationTimestamp": "2025-09-08T19:46:38Z",
+        "labels": {
+          "app.kubernetes.io/instance": "traefik-kube-system",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "traefik",
+          "endpoints.kubernetes.io/managed-by": "endpoint-controller",
+          "helm.sh/chart": "traefik-34.2.1_up34.2.0"
+        },
+        "annotations": {
+          "endpoints.kubernetes.io/last-change-trigger-time": "2025-09-08T19:46:52Z"
+        },
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:52Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:app.kubernetes.io/instance": {},
+                  "f:app.kubernetes.io/managed-by": {},
+                  "f:app.kubernetes.io/name": {},
+                  "f:endpoints.kubernetes.io/managed-by": {},
+                  "f:helm.sh/chart": {}
+                }
+              },
+              "f:subsets": {}
+            }
+          }
+        ]
+      },
+      "subsets": [
+        {
+          "addresses": [
+            {
+              "ip": "10.42.0.12",
+              "nodeName": "34b315c61",
+              "targetRef": {
+                "kind": "Pod",
+                "namespace": "kube-system",
+                "name": "traefik-c98fdf6fb-4rwf4",
+                "uid": "dc5715f9-20cf-465c-ba35-6df2d97f117a"
+              }
+            }
+          ],
+          "ports": [
+            {
+              "name": "web",
+              "port": 8000,
+              "protocol": "TCP"
+            },
+            {
+              "name": "websecure",
+              "port": 8443,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

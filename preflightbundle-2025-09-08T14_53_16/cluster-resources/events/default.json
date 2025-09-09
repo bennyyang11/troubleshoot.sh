@@ -1,0 +1,1044 @@
+{
+  "kind": "EventList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "1153"
+  },
+  "items": [
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664bf5b88d60",
+        "namespace": "default",
+        "uid": "5eb70f06-cd2d-4724-8b37-7c32b3e535d9",
+        "resourceVersion": "218",
+        "creationTimestamp": "2025-09-08T19:45:56Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:56Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "Starting",
+      "message": "Starting kubelet.",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:45:56Z",
+      "lastTimestamp": "2025-09-08T19:45:56Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664bfcfa76eb",
+        "namespace": "default",
+        "uid": "cbbe4220-155d-4856-87b1-76ceee1587b3",
+        "resourceVersion": "227",
+        "creationTimestamp": "2025-09-08T19:45:56Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:56Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodeHasSufficientMemory",
+      "message": "Node 34b315c61 status is now: NodeHasSufficientMemory",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:45:56Z",
+      "lastTimestamp": "2025-09-08T19:45:56Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664bfcfa9cd7",
+        "namespace": "default",
+        "uid": "1d316628-6eb4-47de-a8fe-16419fff9a06",
+        "resourceVersion": "229",
+        "creationTimestamp": "2025-09-08T19:45:56Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:56Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodeHasNoDiskPressure",
+      "message": "Node 34b315c61 status is now: NodeHasNoDiskPressure",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:45:56Z",
+      "lastTimestamp": "2025-09-08T19:45:56Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664bfcfabd5d",
+        "namespace": "default",
+        "uid": "a38ff775-a2ca-4d55-a724-692d16b2fb22",
+        "resourceVersion": "230",
+        "creationTimestamp": "2025-09-08T19:45:56Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:56Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodeHasSufficientPID",
+      "message": "Node 34b315c61 status is now: NodeHasSufficientPID",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:45:56Z",
+      "lastTimestamp": "2025-09-08T19:45:56Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664c041e5ce0",
+        "namespace": "default",
+        "uid": "b1bff9c2-f89c-4401-a8c0-03391a7c3b66",
+        "resourceVersion": "225",
+        "creationTimestamp": "2025-09-08T19:45:56Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:56Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodeAllocatableEnforced",
+      "message": "Updated Node Allocatable limit across pods",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:45:56Z",
+      "lastTimestamp": "2025-09-08T19:45:56Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664c1825da0e",
+        "namespace": "default",
+        "uid": "0fbca75c-1281-47e3-bb61-44177e82ccf4",
+        "resourceVersion": "240",
+        "creationTimestamp": "2025-09-08T19:45:56Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:56Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodeReady",
+      "message": "Node 34b315c61 status is now: NodeReady",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:45:56Z",
+      "lastTimestamp": "2025-09-08T19:45:56Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664c4516de9a",
+        "namespace": "default",
+        "uid": "472d99ea-361a-41ca-b87e-64d2e8f8eb43",
+        "resourceVersion": "250",
+        "creationTimestamp": "2025-09-08T19:45:57Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "events.k8s.io/v1",
+            "time": "2025-09-08T19:45:57Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:action": {},
+              "f:eventTime": {},
+              "f:reason": {},
+              "f:regarding": {},
+              "f:reportingController": {},
+              "f:reportingInstance": {},
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "Starting",
+      "source": {},
+      "firstTimestamp": null,
+      "lastTimestamp": null,
+      "type": "Normal",
+      "eventTime": "2025-09-08T19:45:57.367298Z",
+      "action": "StartKubeProxy",
+      "reportingComponent": "kube-proxy",
+      "reportingInstance": "kube-proxy-34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664cb93235d4",
+        "namespace": "default",
+        "uid": "8cccbb78-a14a-40c8-9dbb-2ae813f7920a",
+        "resourceVersion": "303",
+        "creationTimestamp": "2025-09-08T19:45:59Z",
+        "managedFields": [
+          {
+            "manager": "k3s-supervisor@34b315c61",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:45:59Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodePasswordValidationComplete",
+      "message": "Deferred node password secret validation complete",
+      "source": {
+        "component": "k3s-supervisor",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:45:59Z",
+      "lastTimestamp": "2025-09-08T19:45:59Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "k3s-supervisor",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664d1afb2b8c",
+        "namespace": "default",
+        "uid": "da35552a-248c-46f2-bdd9-60691bf809b0",
+        "resourceVersion": "400",
+        "creationTimestamp": "2025-09-08T19:46:00Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:00Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "a4f26df5-0580-4377-af73-b48708e72d8c",
+        "apiVersion": "v1",
+        "resourceVersion": "247"
+      },
+      "reason": "Synced",
+      "message": "Node synced successfully",
+      "source": {
+        "component": "cloud-node-controller"
+      },
+      "firstTimestamp": "2025-09-08T19:46:00Z",
+      "lastTimestamp": "2025-09-08T19:46:00Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "cloud-node-controller",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863664d27ccc97d",
+        "namespace": "default",
+        "uid": "eef6553f-677b-4dd4-921d-51b8a0904b36",
+        "resourceVersion": "405",
+        "creationTimestamp": "2025-09-08T19:46:01Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:01Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "a4f26df5-0580-4377-af73-b48708e72d8c",
+        "apiVersion": "v1"
+      },
+      "reason": "RegisteredNode",
+      "message": "Node 34b315c61 event: Registered Node 34b315c61 in Controller",
+      "source": {
+        "component": "node-controller"
+      },
+      "firstTimestamp": "2025-09-08T19:46:01Z",
+      "lastTimestamp": "2025-09-08T19:46:01Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "node-controller",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.18636650fc93048c",
+        "namespace": "default",
+        "uid": "48113a5f-d58a-44b4-9626-e3319a67edc9",
+        "resourceVersion": "513",
+        "creationTimestamp": "2025-09-08T19:46:17Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:17Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "CertificateExpirationOK",
+      "message": "Node and Certificate Authority certificates managed by k3s are OK",
+      "source": {
+        "component": "k3s-cert-monitor",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:46:17Z",
+      "lastTimestamp": "2025-09-08T19:46:17Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "k3s-cert-monitor",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.18636651144be577",
+        "namespace": "default",
+        "uid": "291c39e5-39bc-4ee0-8f52-7e9564f87dd8",
+        "resourceVersion": "516",
+        "creationTimestamp": "2025-09-08T19:46:18Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:18Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "Starting",
+      "message": "Starting kubelet.",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:46:18Z",
+      "lastTimestamp": "2025-09-08T19:46:18Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.186366511bdbbec5",
+        "namespace": "default",
+        "uid": "ec5b806c-64b5-44e4-a552-bccc5ac09497",
+        "resourceVersion": "517",
+        "creationTimestamp": "2025-09-08T19:46:18Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "events.k8s.io/v1",
+            "time": "2025-09-08T19:46:18Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:action": {},
+              "f:eventTime": {},
+              "f:reason": {},
+              "f:regarding": {},
+              "f:reportingController": {},
+              "f:reportingInstance": {},
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "Starting",
+      "source": {},
+      "firstTimestamp": null,
+      "lastTimestamp": null,
+      "type": "Normal",
+      "eventTime": "2025-09-08T19:46:18.150394Z",
+      "action": "StartKubeProxy",
+      "reportingComponent": "kube-proxy",
+      "reportingInstance": "kube-proxy-34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.186366511f71e434",
+        "namespace": "default",
+        "uid": "2c07ee26-88a1-4d0f-be9a-27987e243000",
+        "resourceVersion": "518",
+        "creationTimestamp": "2025-09-08T19:46:18Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:18Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "InvalidDiskCapacity",
+      "message": "invalid capacity 0 on image filesystem",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:46:18Z",
+      "lastTimestamp": "2025-09-08T19:46:18Z",
+      "count": 1,
+      "type": "Warning",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.1863665146bef260",
+        "namespace": "default",
+        "uid": "89ac7133-3517-4afa-acab-af3b709ff649",
+        "resourceVersion": "520",
+        "creationTimestamp": "2025-09-08T19:46:18Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:18Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodeAllocatableEnforced",
+      "message": "Updated Node Allocatable limit across pods",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:46:18Z",
+      "lastTimestamp": "2025-09-08T19:46:18Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.186366514c6b695b",
+        "namespace": "default",
+        "uid": "c30c6b69-2c21-4838-bdbd-f49677e52caf",
+        "resourceVersion": "522",
+        "creationTimestamp": "2025-09-08T19:46:18Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:18Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodeHasSufficientMemory",
+      "message": "Node 34b315c61 status is now: NodeHasSufficientMemory",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:46:18Z",
+      "lastTimestamp": "2025-09-08T19:46:18Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.186366514c6b87c4",
+        "namespace": "default",
+        "uid": "b780d2aa-e5b4-4936-8699-1658449f8f16",
+        "resourceVersion": "524",
+        "creationTimestamp": "2025-09-08T19:46:18Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:18Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodeHasNoDiskPressure",
+      "message": "Node 34b315c61 status is now: NodeHasNoDiskPressure",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:46:18Z",
+      "lastTimestamp": "2025-09-08T19:46:18Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.186366514c6b9530",
+        "namespace": "default",
+        "uid": "705df021-7786-4edb-8e7d-a14e179ba52c",
+        "resourceVersion": "525",
+        "creationTimestamp": "2025-09-08T19:46:19Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:19Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodeHasSufficientPID",
+      "message": "Node 34b315c61 status is now: NodeHasSufficientPID",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:46:18Z",
+      "lastTimestamp": "2025-09-08T19:46:18Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.186366519ce730df",
+        "namespace": "default",
+        "uid": "8fa62a00-b1a6-49a0-9488-731881874758",
+        "resourceVersion": "566",
+        "creationTimestamp": "2025-09-08T19:46:20Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:20Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "a4f26df5-0580-4377-af73-b48708e72d8c",
+        "apiVersion": "v1"
+      },
+      "reason": "RegisteredNode",
+      "message": "Node 34b315c61 event: Registered Node 34b315c61 in Controller",
+      "source": {
+        "component": "node-controller"
+      },
+      "firstTimestamp": "2025-09-08T19:46:20Z",
+      "lastTimestamp": "2025-09-08T19:46:20Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "node-controller",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "34b315c61.18636651c487f631",
+        "namespace": "default",
+        "uid": "c7a1591f-e4f8-4b2a-8d43-025a543ebb1a",
+        "resourceVersion": "618",
+        "creationTimestamp": "2025-09-08T19:46:20Z",
+        "managedFields": [
+          {
+            "manager": "k3s-supervisor@34b315c61",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T19:46:20Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "34b315c61",
+        "uid": "34b315c61"
+      },
+      "reason": "NodePasswordValidationComplete",
+      "message": "Deferred node password secret validation complete",
+      "source": {
+        "component": "k3s-supervisor",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T19:46:20Z",
+      "lastTimestamp": "2025-09-08T19:46:20Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "k3s-supervisor",
+      "reportingInstance": "34b315c61"
+    }
+  ]
+}

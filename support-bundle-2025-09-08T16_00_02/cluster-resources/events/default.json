@@ -1,0 +1,399 @@
+{
+  "kind": "EventList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "2546"
+  },
+  "items": [
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "static-hi.186367be9242349c",
+        "namespace": "default",
+        "uid": "d55f796b-9c11-4a36-ac56-e8f79dc30a4e",
+        "resourceVersion": "1497",
+        "creationTimestamp": "2025-09-08T20:12:27Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "events.k8s.io/v1",
+            "time": "2025-09-08T20:12:27Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:action": {},
+              "f:eventTime": {},
+              "f:note": {},
+              "f:reason": {},
+              "f:regarding": {},
+              "f:reportingController": {},
+              "f:reportingInstance": {},
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "static-hi",
+        "uid": "15a8dd99-4cf4-4687-aaee-a883cd72e6e7",
+        "apiVersion": "v1",
+        "resourceVersion": "1495"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned default/static-hi to 34b315c61",
+      "source": {},
+      "firstTimestamp": null,
+      "lastTimestamp": null,
+      "type": "Normal",
+      "eventTime": "2025-09-08T20:12:27.799877Z",
+      "action": "Binding",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "default-scheduler-34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "static-hi.186367beadf1253e",
+        "namespace": "default",
+        "uid": "8d8c174d-7961-45f8-b43d-f55177945716",
+        "resourceVersion": "1499",
+        "creationTimestamp": "2025-09-08T20:12:28Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T20:12:28Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "static-hi",
+        "uid": "15a8dd99-4cf4-4687-aaee-a883cd72e6e7",
+        "apiVersion": "v1",
+        "resourceVersion": "1496",
+        "fieldPath": "spec.containers{static-hi}"
+      },
+      "reason": "Pulling",
+      "message": "Pulling image \"alpine:3\"",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T20:12:28Z",
+      "lastTimestamp": "2025-09-08T20:12:28Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "static-hi.186367beca08d362",
+        "namespace": "default",
+        "uid": "e1a3d9f0-6770-42a4-8967-c877dbc2c4da",
+        "resourceVersion": "1500",
+        "creationTimestamp": "2025-09-08T20:12:28Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T20:12:28Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "static-hi",
+        "uid": "15a8dd99-4cf4-4687-aaee-a883cd72e6e7",
+        "apiVersion": "v1",
+        "resourceVersion": "1496",
+        "fieldPath": "spec.containers{static-hi}"
+      },
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"alpine:3\" in 471ms (471ms including waiting). Image size: 3810510 bytes.",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T20:12:28Z",
+      "lastTimestamp": "2025-09-08T20:12:28Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "static-hi.186367becb6e117b",
+        "namespace": "default",
+        "uid": "4fc06695-3d65-4139-9c97-094febd8247a",
+        "resourceVersion": "1505",
+        "creationTimestamp": "2025-09-08T20:12:28Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T20:12:29Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "static-hi",
+        "uid": "15a8dd99-4cf4-4687-aaee-a883cd72e6e7",
+        "apiVersion": "v1",
+        "resourceVersion": "1496",
+        "fieldPath": "spec.containers{static-hi}"
+      },
+      "reason": "Created",
+      "message": "Created container: static-hi",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T20:12:28Z",
+      "lastTimestamp": "2025-09-08T20:12:29Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "static-hi.186367becdb1bb95",
+        "namespace": "default",
+        "uid": "4f8ff107-45f7-42ef-b2ae-ce60fb13b9ca",
+        "resourceVersion": "1507",
+        "creationTimestamp": "2025-09-08T20:12:28Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T20:12:29Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "static-hi",
+        "uid": "15a8dd99-4cf4-4687-aaee-a883cd72e6e7",
+        "apiVersion": "v1",
+        "resourceVersion": "1496",
+        "fieldPath": "spec.containers{static-hi}"
+      },
+      "reason": "Started",
+      "message": "Started container static-hi",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T20:12:28Z",
+      "lastTimestamp": "2025-09-08T20:12:29Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "static-hi.186367bf07bc1791",
+        "namespace": "default",
+        "uid": "191bd25e-cb60-4b97-a08b-6555f5c6920f",
+        "resourceVersion": "1503",
+        "creationTimestamp": "2025-09-08T20:12:29Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T20:12:29Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "static-hi",
+        "uid": "15a8dd99-4cf4-4687-aaee-a883cd72e6e7",
+        "apiVersion": "v1",
+        "resourceVersion": "1496",
+        "fieldPath": "spec.containers{static-hi}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"alpine:3\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T20:12:29Z",
+      "lastTimestamp": "2025-09-08T20:12:29Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "static-hi.186367bf438039a1",
+        "namespace": "default",
+        "uid": "7986b712-46af-4266-97e4-4db3175bf579",
+        "resourceVersion": "1511",
+        "creationTimestamp": "2025-09-08T20:12:30Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T20:12:31Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "static-hi",
+        "uid": "15a8dd99-4cf4-4687-aaee-a883cd72e6e7",
+        "apiVersion": "v1",
+        "resourceVersion": "1496",
+        "fieldPath": "spec.containers{static-hi}"
+      },
+      "reason": "BackOff",
+      "message": "Back-off restarting failed container static-hi in pod static-hi_default(15a8dd99-4cf4-4687-aaee-a883cd72e6e7)",
+      "source": {
+        "component": "kubelet",
+        "host": "34b315c61"
+      },
+      "firstTimestamp": "2025-09-08T20:12:30Z",
+      "lastTimestamp": "2025-09-08T20:12:31Z",
+      "count": 2,
+      "type": "Warning",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "34b315c61"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+# Example Auto-Discovery Configuration
+# This shows what the YAML path can do beyond the foundation
+
+defaultOptions:
+  namespaces: [] # Empty = all accessible namespaces
+  includeImages: true
+  rbacCheck: true  
+  maxDepth: 3
+
+# CUSTOM RESOURCE FILTERS - Add/Remove resource types beyond foundation
+resourceFilters:
+  # Include additional monitoring resources
+  - name: "monitoring-resources"
+    action: "include"
+    matchGVRs:
+      - group: "monitoring.coreos.com"
+        version: "v1"
+        resource: "servicemonitors"
+      - group: "monitoring.coreos.com"
+        version: "v1"
+        resource: "prometheusrules"
+    
+  # Exclude sensitive secrets
+  - name: "exclude-sensitive-secrets"
+    action: "exclude"
+    matchGVRs:
+      - group: ""
+        version: "v1"
+        resource: "secrets"
+    matchNamespaces: ["kube-system", "vault"]
+    
+  # Include only production workloads
+  - name: "production-workloads-only"
+    action: "include"
+    matchGVRs:
+      - group: "apps"
+        version: "v1"
+        resource: "deployments"
+    labelSelector: "env=production"
+
+# CUSTOM COLLECTOR MAPPINGS - Override foundation behavior
+collectorMappings:
+  # Enhanced database logs with longer retention
+  - name: "database-logs-extended"
+    matchGVRs:
+      - group: ""
+        version: "v1"
+        resource: "pods"
+    collectorType: "logs"
+    priority: 15
+    parameters:
+      maxAge: "168h"     # 7 days instead of default 72h
+      maxLines: 50000    # More lines than default
+      previous: true     # Include previous container logs
+    condition: "labels['app'] contains 'database'"
+    
+  # Custom exec collectors for debugging
+  - name: "debug-exec"
+    matchGVRs:
+      - group: ""
+        version: "v1"
+        resource: "pods"
+    collectorType: "exec"
+    priority: 5
+    parameters:
+      command: ["df", "-h"]
+      timeout: "30s"
+    condition: "labels['debug'] == 'true'"
+
+# EXCLUDES - Remove things from foundation discovery
+excludes:
+  # Exclude auto-generated service account tokens
+  - gvrs:
+      - group: ""
+        version: "v1"
+        resource: "secrets"
+    names: ["default-token-*", "sh.helm.release.*"]
+    reason: "Auto-generated tokens not useful for troubleshooting"
+    
+  # Exclude test namespaces  
+  - namespaces: ["test-*", "dev-*"]
+    reason: "Development environments excluded from production troubleshooting"
+
+# INCLUDES - Force-add critical resources beyond foundation
+includes:
+  # Always include cluster events (critical for diagnostics)
+  - gvrs:
+      - group: ""
+        version: "v1"
+        resource: "events"
+    priority: 20
+    
+  # Include custom resources for monitoring
+  - gvrs:
+      - group: "custom.company.com"
+        version: "v1"
+        resource: "applications"
+    namespaces: ["production"]
+    priority: 10

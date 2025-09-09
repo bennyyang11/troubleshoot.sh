@@ -1,0 +1,65 @@
+{
+  "kind": "PriorityClassList",
+  "apiVersion": "scheduling.k8s.io/v1",
+  "metadata": {
+    "resourceVersion": "2543"
+  },
+  "items": [
+    {
+      "kind": "PriorityClass",
+      "apiVersion": "scheduling.k8s.io/v1",
+      "metadata": {
+        "name": "system-cluster-critical",
+        "uid": "74a1e59e-78d8-442f-b6b4-9db8ff2ace4a",
+        "resourceVersion": "78",
+        "generation": 1,
+        "creationTimestamp": "2025-09-08T19:45:55Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "scheduling.k8s.io/v1",
+            "time": "2025-09-08T19:45:55Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:description": {},
+              "f:preemptionPolicy": {},
+              "f:value": {}
+            }
+          }
+        ]
+      },
+      "value": 2000000000,
+      "description": "Used for system critical pods that must run in the cluster, but can be moved to another node if necessary.",
+      "preemptionPolicy": "PreemptLowerPriority"
+    },
+    {
+      "kind": "PriorityClass",
+      "apiVersion": "scheduling.k8s.io/v1",
+      "metadata": {
+        "name": "system-node-critical",
+        "uid": "661c4fa6-c26f-4cde-86af-94bf1773f440",
+        "resourceVersion": "77",
+        "generation": 1,
+        "creationTimestamp": "2025-09-08T19:45:55Z",
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "scheduling.k8s.io/v1",
+            "time": "2025-09-08T19:45:55Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:description": {},
+              "f:preemptionPolicy": {},
+              "f:value": {}
+            }
+          }
+        ]
+      },
+      "value": 2000001000,
+      "description": "Used for system critical pods that must not be moved from their current node.",
+      "preemptionPolicy": "PreemptLowerPriority"
+    }
+  ]
+}

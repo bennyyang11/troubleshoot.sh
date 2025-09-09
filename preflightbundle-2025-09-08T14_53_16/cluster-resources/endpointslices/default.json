@@ -1,0 +1,62 @@
+{
+  "kind": "EndpointSliceList",
+  "apiVersion": "discovery.k8s.io/v1",
+  "metadata": {
+    "resourceVersion": "1156"
+  },
+  "items": [
+    {
+      "kind": "EndpointSlice",
+      "apiVersion": "discovery.k8s.io/v1",
+      "metadata": {
+        "name": "kubernetes",
+        "namespace": "default",
+        "uid": "1cf69ae1-6f9a-4e72-bf6a-9aea18453177",
+        "resourceVersion": "61",
+        "generation": 1,
+        "creationTimestamp": "2025-09-08T19:45:54Z",
+        "labels": {
+          "kubernetes.io/service-name": "kubernetes"
+        },
+        "managedFields": [
+          {
+            "manager": "k3s",
+            "operation": "Update",
+            "apiVersion": "discovery.k8s.io/v1",
+            "time": "2025-09-08T19:45:54Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:addressType": {},
+              "f:endpoints": {},
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/service-name": {}
+                }
+              },
+              "f:ports": {}
+            }
+          }
+        ]
+      },
+      "addressType": "IPv4",
+      "endpoints": [
+        {
+          "addresses": [
+            "10.0.0.11"
+          ],
+          "conditions": {
+            "ready": true
+          }
+        }
+      ],
+      "ports": [
+        {
+          "name": "https",
+          "protocol": "TCP",
+          "port": 6443
+        }
+      ]
+    }
+  ]
+}

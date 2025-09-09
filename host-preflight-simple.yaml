@@ -1,0 +1,54 @@
+apiVersion: troubleshoot.sh/v1beta2
+kind: HostPreflight
+metadata:
+  name: simple-host-preflight
+spec:
+  collectors:
+    - cpu: {}
+    - memory: {}
+    - diskUsage:
+        path: /
+    - hostOS: {}
+  analyzers:
+    - cpu:
+        checkName: "CPU Requirements"
+        outcomes:
+          - fail:
+              when: "count < 1"
+              message: "At least 1 CPU core required"
+          - warn:
+              when: "count < 2"
+              message: "2 CPU cores recommended"
+          - pass:
+              message: "CPU requirements met"
+    - memory:
+        checkName: "Memory Requirements" 
+        outcomes:
+          - fail:
+              when: "< 1Gi"
+              message: "At least 1GB RAM required"
+          - warn:
+              when: "< 2Gi"
+              message: "2GB RAM recommended"
+          - pass:
+              message: "Memory requirements met"
+    - diskUsage:
+        checkName: "Disk Space"
+        collectorName: "/"
+        outcomes:
+          - fail:
+              when: "total < 10Gi"
+              message: "At least 10GB disk space required"
+          - warn:
+              when: "available < 5Gi"
+              message: "Less than 5GB free disk space available"
+          - pass:
+              message: "Sufficient disk space available"
+    - hostOS:
+        checkName: "Operating System"
+        outcomes:
+          - fail:
+              when: "kernelVersion < 4.0.0"
+              message: "Linux kernel 4.0+ required"
+          - pass:
+              message: "Operating system is supported"

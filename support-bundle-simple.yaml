@@ -1,0 +1,41 @@
+apiVersion: troubleshoot.sh/v1beta2
+kind: SupportBundle
+metadata:
+  name: simple-demo-support-bundle
+spec:
+  collectors:
+    - clusterInfo: {}
+    - clusterResources: {}
+    - logs:
+        namespace: kube-system
+        limits:
+          maxAge: 1h
+  analyzers:
+    - clusterVersion:
+        outcomes:
+          - fail:
+              when: "< 1.24.0"
+              message: Kubernetes version is too old
+          - pass:
+              message: Kubernetes version is supported
+    - storageClass:
+        checkName: Default StorageClass
+        storageClassName: ""
+        outcomes:
+          - pass:
+              message: Default StorageClass is present
+          - fail:
+              message: No default StorageClass found
+    - nodeResources:
+        checkName: Basic node availability
+        outcomes:
+          - fail:
+              when: "count() < 1"
+              message: No nodes found in the cluster
+          - warn:
+              when: "min(memoryCapacity) < 2Gi"
+              message: Each node should have at least 2Gi memory
+          - pass:
+              message: Node resources look OK
+
+

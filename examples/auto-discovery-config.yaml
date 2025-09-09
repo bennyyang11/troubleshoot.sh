@@ -1,0 +1,62 @@
+# Auto-discovery configuration example
+# This file demonstrates how to configure the auto-discovery system
+
+defaultOptions:
+  namespaces: [] # Empty means all accessible namespaces
+  includeImages: true
+  rbacCheck: true  
+  maxDepth: 3
+
+# Resource filters allow custom inclusion/exclusion rules
+resourceFilters:
+  - name: "exclude-system-secrets"
+    matchGVRs:
+      - group: ""
+        version: "v1" 
+        resource: "secrets"
+    matchNamespaces: ["kube-system", "kube-public"]
+    action: "exclude"
+    
+  - name: "include-app-pods"
+    matchGVRs:
+      - group: ""
+        version: "v1"
+        resource: "pods" 
+    matchLabels:
+      app: "my-application"
+    action: "include"
+
+# Custom collector mappings override default behavior
+collectorMappings:
+  - name: "custom-database-logs"
+    matchGVRs:
+      - group: ""
+        version: "v1"
+        resource: "pods"
+    collectorType: "logs"
+    priority: 10
+    parameters:
+      maxAge: "7d"
+      maxLines: 50000
+    condition: "labels['app'] == 'database'"
+
+# Global exclusions - resources to never auto-discover
+excludes:
+  - gvrs:
+      - group: ""
+        version: "v1"
+        resource: "secrets"
+    names: ["admin-password", "api-keys"]
+    reason: "Contains sensitive credentials"
+    
+  - namespaces: ["test-namespace"]
+    reason: "Test environment, not needed for production troubleshooting"
+
+# Global inclusions - resources to always discover
+includes:
+  - gvrs:
+      - group: "apps"
+        version: "v1" 
+        resource: "deployments"
+    namespaces: ["critical-services"]
+    priority: 20

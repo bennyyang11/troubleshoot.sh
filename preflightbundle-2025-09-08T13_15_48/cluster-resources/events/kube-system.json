@@ -1,0 +1,1057 @@
+{
+  "kind": "EventList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "463"
+  },
+  "items": [
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "coredns-674b8bbfcf-t7bgr.1863614aca47e476",
+        "namespace": "kube-system",
+        "uid": "5125f583-b35a-408b-b001-a4efced089fa",
+        "resourceVersion": "352",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "coredns-674b8bbfcf-t7bgr",
+        "uid": "4b22b061-c1c8-482e-8275-c06efcad5d82",
+        "apiVersion": "v1",
+        "resourceVersion": "348"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned kube-system/coredns-674b8bbfcf-t7bgr to minikube",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "coredns-674b8bbfcf-t7bgr.1863614ae08f8394",
+        "namespace": "kube-system",
+        "uid": "303e42b4-72de-4165-9224-a63c89afe941",
+        "resourceVersion": "360",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "coredns-674b8bbfcf-t7bgr",
+        "uid": "4b22b061-c1c8-482e-8275-c06efcad5d82",
+        "apiVersion": "v1",
+        "resourceVersion": "350",
+        "fieldPath": "spec.containers{coredns}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"registry.k8s.io/coredns/coredns:v1.12.0\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "coredns-674b8bbfcf-t7bgr.1863614ae127bc54",
+        "namespace": "kube-system",
+        "uid": "952bcb94-3807-4b6c-adcf-6aaf29aab84f",
+        "resourceVersion": "361",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "coredns-674b8bbfcf-t7bgr",
+        "uid": "4b22b061-c1c8-482e-8275-c06efcad5d82",
+        "apiVersion": "v1",
+        "resourceVersion": "350",
+        "fieldPath": "spec.containers{coredns}"
+      },
+      "reason": "Created",
+      "message": "Created container: coredns",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "coredns-674b8bbfcf-t7bgr.1863614ae46849f4",
+        "namespace": "kube-system",
+        "uid": "e9ca36e8-cccf-4d9f-a915-809cbca9c027",
+        "resourceVersion": "362",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "coredns-674b8bbfcf-t7bgr",
+        "uid": "4b22b061-c1c8-482e-8275-c06efcad5d82",
+        "apiVersion": "v1",
+        "resourceVersion": "350",
+        "fieldPath": "spec.containers{coredns}"
+      },
+      "reason": "Started",
+      "message": "Started container coredns",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "coredns-674b8bbfcf.1863614aca21ac9b",
+        "namespace": "kube-system",
+        "uid": "da07974b-b2f0-4ea1-9202-8eaf81acfa6f",
+        "resourceVersion": "349",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "kube-system",
+        "name": "coredns-674b8bbfcf",
+        "uid": "2daf009a-7552-4772-8d7b-4be532fb067d",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "344"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: coredns-674b8bbfcf-t7bgr",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "replicaset-controller",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "coredns.1863614ac4498331",
+        "namespace": "kube-system",
+        "uid": "58dd865a-15f6-4962-98c0-254da4e55c74",
+        "resourceVersion": "345",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "kube-system",
+        "name": "coredns",
+        "uid": "ea05a7a5-ba9f-4e3e-a33a-ad315e5c4c63",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "276"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set coredns-674b8bbfcf from 0 to 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "deployment-controller",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "k8s.io-minikube-hostpath.1863614afd98f79b",
+        "namespace": "kube-system",
+        "uid": "799c0103-731e-4352-addd-5777b9808513",
+        "resourceVersion": "371",
+        "creationTimestamp": "2025-09-08T18:14:14Z",
+        "managedFields": [
+          {
+            "manager": "storage-provisioner",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:14Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Endpoints",
+        "namespace": "kube-system",
+        "name": "k8s.io-minikube-hostpath",
+        "uid": "a8774cf6-cc09-4726-a0f2-14cb0c013305",
+        "apiVersion": "v1",
+        "resourceVersion": "369"
+      },
+      "reason": "LeaderElection",
+      "message": "minikube_c547fb1d-f2d1-4101-9c0d-487c6219bc67 became leader",
+      "source": {
+        "component": "k8s.io/minikube-hostpath_minikube_c547fb1d-f2d1-4101-9c0d-487c6219bc67"
+      },
+      "firstTimestamp": "2025-09-08T18:14:14Z",
+      "lastTimestamp": "2025-09-08T18:14:14Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "kube-proxy-nxr6l.1863614abe5c72dd",
+        "namespace": "kube-system",
+        "uid": "567a6b53-0430-46de-af4f-1fc1b5dd8112",
+        "resourceVersion": "341",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "kube-proxy-nxr6l",
+        "uid": "e5ba7451-b12f-4d31-a837-c735790ba93f",
+        "apiVersion": "v1",
+        "resourceVersion": "337"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned kube-system/kube-proxy-nxr6l to minikube",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "kube-proxy-nxr6l.1863614ad48da900",
+        "namespace": "kube-system",
+        "uid": "bc175f99-63c0-4973-afa4-88e8c42e7c4e",
+        "resourceVersion": "356",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "kube-proxy-nxr6l",
+        "uid": "e5ba7451-b12f-4d31-a837-c735790ba93f",
+        "apiVersion": "v1",
+        "resourceVersion": "340",
+        "fieldPath": "spec.containers{kube-proxy}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"registry.k8s.io/kube-proxy:v1.33.1\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "kube-proxy-nxr6l.1863614ad518ad0e",
+        "namespace": "kube-system",
+        "uid": "825d4eda-2509-4aeb-bccf-88fa0ebef34c",
+        "resourceVersion": "357",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "kube-proxy-nxr6l",
+        "uid": "e5ba7451-b12f-4d31-a837-c735790ba93f",
+        "apiVersion": "v1",
+        "resourceVersion": "340",
+        "fieldPath": "spec.containers{kube-proxy}"
+      },
+      "reason": "Created",
+      "message": "Created container: kube-proxy",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "kube-proxy-nxr6l.1863614ad78bbcb9",
+        "namespace": "kube-system",
+        "uid": "823a6bdd-3544-4569-86bc-88c5a0eb0c0f",
+        "resourceVersion": "358",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "kube-proxy-nxr6l",
+        "uid": "e5ba7451-b12f-4d31-a837-c735790ba93f",
+        "apiVersion": "v1",
+        "resourceVersion": "340",
+        "fieldPath": "spec.containers{kube-proxy}"
+      },
+      "reason": "Started",
+      "message": "Started container kube-proxy",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "kube-proxy.1863614abe3879e1",
+        "namespace": "kube-system",
+        "uid": "417be37a-4a74-479a-b8ca-f94c35e92306",
+        "resourceVersion": "339",
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "DaemonSet",
+        "namespace": "kube-system",
+        "name": "kube-proxy",
+        "uid": "bf7d8120-0f80-42b6-8526-c1c1fd058591",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "246"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: kube-proxy-nxr6l",
+      "source": {
+        "component": "daemonset-controller"
+      },
+      "firstTimestamp": "2025-09-08T18:14:13Z",
+      "lastTimestamp": "2025-09-08T18:14:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "daemonset-controller",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "kube-scheduler-minikube.186361498e9a3ed4",
+        "namespace": "kube-system",
+        "uid": "820f59bb-a720-4a61-afca-2ad80a31e30b",
+        "resourceVersion": "264",
+        "creationTimestamp": "2025-09-08T18:14:08Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:08Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "kube-scheduler-minikube",
+        "uid": "feee622ba49882ef945e2406d3ba86df",
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{kube-scheduler}"
+      },
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: HTTP probe failed with statuscode: 500",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:08Z",
+      "lastTimestamp": "2025-09-08T18:14:08Z",
+      "count": 1,
+      "type": "Warning",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "storage-provisioner.18636149d5bbdf8c",
+        "namespace": "kube-system",
+        "uid": "9ec84a5a-f5d8-43be-b921-ab3821e564da",
+        "resourceVersion": "290",
+        "creationTimestamp": "2025-09-08T18:14:09Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:09Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "storage-provisioner",
+        "uid": "8c2e9861-8784-462a-9163-7b6c785a65b9",
+        "apiVersion": "v1",
+        "resourceVersion": "283"
+      },
+      "reason": "FailedScheduling",
+      "message": "0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2025-09-08T18:14:09Z",
+      "lastTimestamp": "2025-09-08T18:14:09Z",
+      "count": 1,
+      "type": "Warning",
+      "eventTime": null,
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "storage-provisioner.1863614a89637517",
+        "namespace": "kube-system",
+        "uid": "569f4c89-8a71-4d70-b922-e4a322635945",
+        "resourceVersion": "312",
+        "creationTimestamp": "2025-09-08T18:14:12Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:12Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "storage-provisioner",
+        "uid": "8c2e9861-8784-462a-9163-7b6c785a65b9",
+        "apiVersion": "v1",
+        "resourceVersion": "291"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned kube-system/storage-provisioner to minikube",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2025-09-08T18:14:12Z",
+      "lastTimestamp": "2025-09-08T18:14:12Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": ""
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "storage-provisioner.1863614a90fdefc2",
+        "namespace": "kube-system",
+        "uid": "371a2745-9228-423c-a70c-8f1ca5460d96",
+        "resourceVersion": "326",
+        "creationTimestamp": "2025-09-08T18:14:12Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:12Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "storage-provisioner",
+        "uid": "8c2e9861-8784-462a-9163-7b6c785a65b9",
+        "apiVersion": "v1",
+        "resourceVersion": "310"
+      },
+      "reason": "FailedMount",
+      "message": "MountVolume.SetUp failed for volume \"kube-api-access-4qb2g\" : configmap \"kube-root-ca.crt\" not found",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:12Z",
+      "lastTimestamp": "2025-09-08T18:14:12Z",
+      "count": 2,
+      "type": "Warning",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "storage-provisioner.1863614af98149b7",
+        "namespace": "kube-system",
+        "uid": "fc641954-c45a-4e80-b588-c2b05a033f64",
+        "resourceVersion": "363",
+        "creationTimestamp": "2025-09-08T18:14:14Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:14Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "storage-provisioner",
+        "uid": "8c2e9861-8784-462a-9163-7b6c785a65b9",
+        "apiVersion": "v1",
+        "resourceVersion": "310",
+        "fieldPath": "spec.containers{storage-provisioner}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"gcr.io/k8s-minikube/storage-provisioner:v5\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:14Z",
+      "lastTimestamp": "2025-09-08T18:14:14Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "storage-provisioner.1863614afa32a051",
+        "namespace": "kube-system",
+        "uid": "b4d3badb-0f03-4a6f-b012-27a7445d2daf",
+        "resourceVersion": "364",
+        "creationTimestamp": "2025-09-08T18:14:14Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:14Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "storage-provisioner",
+        "uid": "8c2e9861-8784-462a-9163-7b6c785a65b9",
+        "apiVersion": "v1",
+        "resourceVersion": "310",
+        "fieldPath": "spec.containers{storage-provisioner}"
+      },
+      "reason": "Created",
+      "message": "Created container: storage-provisioner",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:14Z",
+      "lastTimestamp": "2025-09-08T18:14:14Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "storage-provisioner.1863614afd00fa44",
+        "namespace": "kube-system",
+        "uid": "5d20d84c-c99f-4c94-8297-71aea89eca4a",
+        "resourceVersion": "365",
+        "creationTimestamp": "2025-09-08T18:14:14Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-09-08T18:14:14Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:reportingComponent": {},
+              "f:reportingInstance": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "storage-provisioner",
+        "uid": "8c2e9861-8784-462a-9163-7b6c785a65b9",
+        "apiVersion": "v1",
+        "resourceVersion": "310",
+        "fieldPath": "spec.containers{storage-provisioner}"
+      },
+      "reason": "Started",
+      "message": "Started container storage-provisioner",
+      "source": {
+        "component": "kubelet",
+        "host": "minikube"
+      },
+      "firstTimestamp": "2025-09-08T18:14:14Z",
+      "lastTimestamp": "2025-09-08T18:14:14Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "kubelet",
+      "reportingInstance": "minikube"
+    }
+  ]
+}

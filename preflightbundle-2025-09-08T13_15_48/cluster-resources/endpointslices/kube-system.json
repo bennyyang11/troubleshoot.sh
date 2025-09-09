@@ -1,0 +1,112 @@
+{
+  "kind": "EndpointSliceList",
+  "apiVersion": "discovery.k8s.io/v1",
+  "metadata": {
+    "resourceVersion": "463"
+  },
+  "items": [
+    {
+      "kind": "EndpointSlice",
+      "apiVersion": "discovery.k8s.io/v1",
+      "metadata": {
+        "name": "kube-dns-nc929",
+        "generateName": "kube-dns-",
+        "namespace": "kube-system",
+        "uid": "21442b2d-f4d1-49f2-b8ba-dd771c6eedff",
+        "resourceVersion": "387",
+        "generation": 3,
+        "creationTimestamp": "2025-09-08T18:14:13Z",
+        "labels": {
+          "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io",
+          "k8s-app": "kube-dns",
+          "kubernetes.io/cluster-service": "true",
+          "kubernetes.io/name": "CoreDNS",
+          "kubernetes.io/service-name": "kube-dns"
+        },
+        "annotations": {
+          "endpoints.kubernetes.io/last-change-trigger-time": "2025-09-08T18:14:18Z"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "name": "kube-dns",
+            "uid": "260f673e-6939-49fd-b210-8c39952f82fa",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "discovery.k8s.io/v1",
+            "time": "2025-09-08T18:14:18Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:addressType": {},
+              "f:endpoints": {},
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                },
+                "f:generateName": {},
+                "f:labels": {
+                  ".": {},
+                  "f:endpointslice.kubernetes.io/managed-by": {},
+                  "f:k8s-app": {},
+                  "f:kubernetes.io/cluster-service": {},
+                  "f:kubernetes.io/name": {},
+                  "f:kubernetes.io/service-name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"260f673e-6939-49fd-b210-8c39952f82fa\"}": {}
+                }
+              },
+              "f:ports": {}
+            }
+          }
+        ]
+      },
+      "addressType": "IPv4",
+      "endpoints": [
+        {
+          "addresses": [
+            "10.244.0.2"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "targetRef": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "coredns-674b8bbfcf-t7bgr",
+            "uid": "4b22b061-c1c8-482e-8275-c06efcad5d82"
+          },
+          "nodeName": "minikube"
+        }
+      ],
+      "ports": [
+        {
+          "name": "metrics",
+          "protocol": "TCP",
+          "port": 9153
+        },
+        {
+          "name": "dns",
+          "protocol": "UDP",
+          "port": 53
+        },
+        {
+          "name": "dns-tcp",
+          "protocol": "TCP",
+          "port": 53
+        }
+      ]
+    }
+  ]
+}
